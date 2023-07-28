@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript%}
+    {% load static %}
+    <meta charset="UTF-8">
+     <title>{% block title %} {%endblock%} - DevOps Free Mock Tests</title>
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet"  href="{% static 'css/style.css' %}" >
+    <link rel="stylesheet"  href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" >
+</head>
+<body>
+<nav class="navbar">
+  <div  >
+    <div class="navbar-header" style="border:1px solid red;">
+      <a class="navbar-brand" href="#">DevOps Free Mock Tests</a>
+    </div>
+      <div style="border:1px solid red;">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+      <li><a href="/testpaper">DevOps Mock Test Q&A</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/contactus">Contact Us</a></li>
+    </ul>
+      </div>
+  </div>
+</nav>
+
+    <header class="text-white">
+    <div class="container text-center">
+      <h1>DevOps Free Mock Tests </h1>
+      <p class="lead"> Contact Us </p>
+    </div>
+  </header>
+
+
+<!--<div class=" content container">-->
+<!--    <div class="row">-->
+<!--<p>-->
+<!--    <h3 class="text-primary">-->
+
+<!--    </h3>-->
+<!--    </p>-->
+        {% block content %}
+        {%endblock%}
+
+         <a href="\contactus"> Share your Feedback</a>
+
+    </div>
+</div>
+
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"> </script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script  type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js" ></script>
+<script type="text/javascript" language="javascript">
+</script>
+
+
+
+</body>
+</html>
